@@ -1,0 +1,95 @@
+/* Basic reset and body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo styling */
+.logo {
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+/* Navigation styling */
+nav {
+    background: #000;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Main grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Article styling */
+article {
+    padding: 20px;
+}
+
+article .feature {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Aside styling */
+aside {
+    padding: 20px;
+}
+
+/* Photo grid styling */
+.photos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+
+.photos img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    article .feature {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
